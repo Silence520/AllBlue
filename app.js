@@ -21,7 +21,7 @@ app.context.render = co.wrap(
 app.use(
 	router(_ => {
 		_.get('/', (ctx, next) => {
-			ctx.body = 'hello';
+			ctx.body = 'hello one piece';
 		});
 		_.get('/index', async (ctx, next) => {
 			ctx.body = await ctx.render('index.html');
